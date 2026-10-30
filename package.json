@@ -1,0 +1,30 @@
+{
+  "name": "dsh-qq-memory",
+  "version": "0.1.1",
+  "description": "QQ 机器人记忆管理插件：按角色查看/编辑 MEMORY/FACTS/REFLECT/日记，权重可视化调整、艾宾浩斯遗忘曲线整理、注入预算监控、记忆章程一键注入人设。",
+  "type": "module",
+  "main": "index.js",
+  "license": "MIT",
+  "keywords": ["dsh", "qq", "moony", "memory", "ebbinghaus", "facts", "role"],
+  "exports": {
+    ".": "./index.js",
+    "./client": "./client.js",
+    "./cordis.patch.yml": "./cordis.patch.yml",
+    "./package.json": "./package.json"
+  },
+  "files": ["index.js", "client.js", "cordis.patch.yml"],
+  "engines": {
+    "dsh": ">=0.1.7",
+    "node": ">=22"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "immediately": true,
+      "inject": ["@deepseek-ai/dsh-client-runtime"]
+    }
+  }
+}
