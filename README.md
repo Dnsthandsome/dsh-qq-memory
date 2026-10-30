@@ -115,7 +115,8 @@ dsh plugin --profile desktop add dist-pkgs/dsh-qq-memory-0.1.1.tgz
 ## 配套
 
 - [`dsh-qq-moony`](https://www.npmjs.com/package/dsh-qq-moony) —— QQ 机器人本体（OneBot / NapCat）
-- `dsh-qq-persona` —— 人格切换，每个性格独立 cwd / sessionId / 音色（本插件按 cwd 自动跟随）
+- [`dsh-qq-persona`](https://github.com/Dnsthandsome/dsh-qq-persona) —— 人格切换，每个性格独立 cwd / sessionId / 音色（本插件按 cwd 自动跟随）
+- [`dsh-qq-media`](https://github.com/Dnsthandsome/dsh-qq-media) —— 语音/图片/视频/文件出口（语音条、音色切换）
 
 ## License
 
