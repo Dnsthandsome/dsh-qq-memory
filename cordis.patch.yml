@@ -1,0 +1,8 @@
+# dsh-qq-memory bundle patch
+# QQ 机器人记忆管理：按角色查看/编辑 MEMORY / FACTS / REFLECT / 日记。
+# 记忆文件落在各角色的 cwd（默认 D:\bigWhale\roles\<id>\memory）。
+- insert:
+    - id: qq-memory
+      name: dsh-qq-memory
+      config:
+        enabled: true
