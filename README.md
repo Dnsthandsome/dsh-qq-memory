@@ -45,14 +45,20 @@
 
 ## 安装
 
+> 尚未发布到 npm，直接从 GitHub 装。
+
+**方式一：让 dsh 从 GitHub 拉取**
+
 ```bash
-dsh plugin --profile desktop add dsh-qq-memory
+dsh plugin --profile desktop add github:Dnsthandsome/dsh-qq-memory
 ```
 
-或者本地打包安装：
+**方式二：下载后本地打包**
 
 ```bash
-pnpm --dir . pack --pack-destination dist-pkgs
+git clone https://github.com/Dnsthandsome/dsh-qq-memory.git
+cd dsh-qq-memory
+pnpm pack --pack-destination dist-pkgs
 dsh plugin --profile desktop add dist-pkgs/dsh-qq-memory-0.1.1.tgz
 ```
 
